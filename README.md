@@ -1,16 +1,23 @@
-# devfest
+# Barber Booking App
 
-A new Flutter project.
+Barber Booking App aims to solve the problem of wasting time waiting for barbers by allowing users to book suitable appointments at their preferred barbershops. This application ensures a seamless and efficient process, saving both time and effort.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📽️ Introduction Video
 
-A few resources to get you started if this is your first Flutter project:
+[Click here to watch the introduction video](https://drive.google.com/file/d/1hKUOhkcrSONLRTwquZK9LVJxmE38JPFV/view?pli=1)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📽️ Presentation & BMC
+
+[Click here to watch the introduction video](https://drive.google.com/drive/folders/12v7CH-4mkYxKVnP7C3Fg41hiC3LC9fq3?usp=sharing)
+
+---
+
+## 📖 Features
+
+- **Appointment Scheduling**: Users can easily book an appointment at their preferred barber based on their schedule.  
+- **Time Management**: Eliminates the hassle of waiting, ensuring a smooth experience for customers.  
+- **User-Friendly Interface**: Simple and intuitive design for hassle-free navigation.  
