@@ -1,5 +1,4 @@
 import 'package:devfest/screens/home.dart';
-import 'package:devfest/screens/success_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
@@ -25,7 +24,7 @@ class MyApp extends StatelessWidget {
         Locale('ar', 'AE'), // Add Arabic support
       ],
       debugShowCheckedModeBanner: false,
-      home: SuccessScreen(),
+      home: HomeScreen(),
     );
   }
 }

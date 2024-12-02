@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:devfest/constant/user.dart'; // Import your User model file
-import 'details_screen.dart'; // Import your BookingScreen file
+import 'bookingscreen.dart'; // Import your BookingScreen file
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -98,7 +98,7 @@ class HomeScreen extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => DetailsScreen(user: users[index]),
+                          builder: (context) => BookingScreen(user: users[index]),
                         ),
                       );
                     },
