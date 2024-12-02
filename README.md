@@ -6,7 +6,7 @@ Barber Booking App aims to solve the problem of wasting time waiting for barbers
 
 ## 📽️ Introduction Video
 
-[Click here to watch the introduction video](https://drive.google.com/file/d/1hKUOhkcrSONLRTwquZK9LVJxmE38JPFV/view?pli=1)
+[Click here](https://drive.google.com/file/d/1hKUOhkcrSONLRTwquZK9LVJxmE38JPFV/view?pli=1)
 
 ---
 
