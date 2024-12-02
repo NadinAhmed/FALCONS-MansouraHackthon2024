@@ -1,11 +1,11 @@
+import 'package:devfest/screens/booking_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:devfest/constant/user.dart'; // Import User model
+import 'package:devfest/constant/user.dart';
 
-class BookingScreen extends StatelessWidget {
-  final User user; // Add a final User variable to store the passed data
+class DetailsScreen extends StatelessWidget {
+  final User user;
 
-  // Constructor to accept the user data from HomeScreen
-  BookingScreen({required this.user});
+  DetailsScreen({required this.user});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class BookingScreen extends StatelessWidget {
           Stack(
             children: [
               Image.asset(
-                user.imagePath, // Use the imagePath from the User model
+                user.imagePath,
                 width: double.infinity,
                 height: 300,
                 fit: BoxFit.cover,
@@ -27,7 +27,7 @@ class BookingScreen extends StatelessWidget {
                 child: IconButton(
                   icon: const Icon(Icons.arrow_back, color: Colors.white),
                   onPressed: () {
-                    Navigator.pop(context); // To go back to the HomeScreen
+                    Navigator.pop(context);
                   },
                 ),
               ),
@@ -43,12 +43,13 @@ class BookingScreen extends StatelessWidget {
                   children: [
                     const SizedBox(height: 16),
                     Text(
-                      user.username, // Display the username passed from HomeScreen
-                      style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                      user.username,
+                      style: const TextStyle(
+                          fontSize: 24, fontWeight: FontWeight.bold),
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      user.address, // Display the address passed from HomeScreen
+                      user.address,
                       style: const TextStyle(color: Colors.grey, fontSize: 16),
                     ),
                     const SizedBox(height: 16),
@@ -68,7 +69,8 @@ class BookingScreen extends StatelessWidget {
                             Icon(Icons.star, color: Colors.amber, size: 20),
                             SizedBox(width: 4),
                             Text(
-                              user.rating.toString(), // Display the rating passed from HomeScreen
+                              user.rating.toString(),
+                              // Display the rating passed from HomeScreen
                               style: const TextStyle(fontSize: 16),
                             ),
                           ],
@@ -81,15 +83,18 @@ class BookingScreen extends StatelessWidget {
                       children: [
                         CircleAvatar(
                           radius: 24,
-                          backgroundImage: AssetImage(user.imagePath), // Display the user's image
+                          backgroundImage: AssetImage(
+                              user.imagePath), // Display the user's image
                         ),
                         const SizedBox(width: 16),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              user.username, // Display the username passed from HomeScreen
-                              style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                              user.username,
+                              // Display the username passed from HomeScreen
+                              style: const TextStyle(
+                                  fontSize: 16, fontWeight: FontWeight.bold),
                             ),
                             const SizedBox(height: 4),
                             Text(
@@ -104,7 +109,8 @@ class BookingScreen extends StatelessWidget {
                     // Comments Section
                     const Text(
                       'تعليقات',
-                      style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                      style:
+                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                     ),
                     const SizedBox(height: 16),
                     Column(
@@ -146,7 +152,12 @@ class BookingScreen extends StatelessWidget {
               width: double.infinity,
               height: 50,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => BookingScreen()),
+                  );
+                },
                 style: ElevatedButton.styleFrom(
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8),
