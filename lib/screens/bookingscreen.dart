@@ -1,4 +1,5 @@
 import 'package:devfest/screens/date_time.dart';
+import 'package:devfest/screens/success_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart'; // Import for launching URLs
 import 'package:devfest/constant/user.dart';// Import User model
@@ -21,7 +22,14 @@ class BookingScreen extends StatelessWidget {
       throw 'Could not launch $url';
     }
   }
-  void _onSubmitBooking() {}
+  _onSubmitBooking(BuildContext context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => const SuccessScreen(),
+      ),
+    );
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -125,7 +133,7 @@ class BookingScreen extends StatelessWidget {
                   ),
                   Divider(height: 32, color: Colors.grey[300]),
                   Container(
-                    height: 240,
+                    height: 200,
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemCount: 10, // Number of items
@@ -231,13 +239,39 @@ class BookingScreen extends StatelessWidget {
 
             // Bottom Booking Button
             Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.symmetric(horizontal: 16.0),
               child: SizedBox(
                 width: double.infinity,
-                height: 50,
-                child: PrimaryButton(name: 'احجز', onClicked: _onSubmitBooking,)
+                child: FilledButton(
+                  onPressed:  () {
+                // Navigate to BookingScreen and pass the selected user
+                Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => SuccessScreen(),
+                ),
+              );
+            },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: AppColors.primaryColor,
+                    // Button color (blue in the image)
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 32, vertical: 12),
+                  ),
+                  child: Text(
+                    "احجز",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 16, // Font size
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
               ),
-            ),
+            )
 
           ],
         ),

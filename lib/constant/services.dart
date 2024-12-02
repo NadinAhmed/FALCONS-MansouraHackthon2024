@@ -12,7 +12,9 @@ class Services {
   });
 }
 final List<Services> items = [
-  Services(photo: "assets/images/classic_cut.jpg", name: "Classic Cut", price: 20, time: 10),
-  Services(photo: "https://via.placeholder.com/150", name: "Classic Cut", price: 20, time: 10.0),
-  Services(photo: "https://via.placeholder.com/150", name: "Classic Cut", price: 20, time: 10.0),
+  Services(photo: "assets/images/s1.png", name: "Classic Cut", price: 20, time: 10),
+  Services(photo: "assets/images/s2.png", name: "Classic Cut", price: 20, time: 10.0),
+  Services(photo: "assets/images/s3.png", name: "Classic Cut", price: 20, time: 10.0),
+  Services(photo: "assets/images/s4.png", name: "Classic Cut", price: 20, time: 10.0),
+  Services(photo: "assets/images/s5.png", name: "Classic Cut", price: 20, time: 10.0),
 ];

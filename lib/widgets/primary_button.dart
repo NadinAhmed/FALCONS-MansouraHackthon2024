@@ -6,7 +6,7 @@ class PrimaryButton extends StatelessWidget {
   const PrimaryButton({super.key,required this.name, required this.onClicked});
 
   final String name;
-  final void Function() onClicked;
+  final Function() onClicked;
 
   @override
   Widget build(BuildContext context) {
