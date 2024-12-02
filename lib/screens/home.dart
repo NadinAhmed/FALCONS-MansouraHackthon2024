@@ -25,11 +25,7 @@ class HomeScreen extends StatelessWidget {
                     CircleAvatar(
                       backgroundImage: AssetImage('assets/images/user1.png'),
                       radius: 24,
-                      child: Icon(
-                        Icons.person,
-                        color: Colors.white,
-                        size: 28,
-                      ),
+
                     ),
                     SizedBox(width: 12),
                     Column(
@@ -156,7 +152,7 @@ class HomeScreen extends StatelessWidget {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.vertical(top: Radius.circular(12)),
               image: DecorationImage(
-                image: AssetImage(user.imagePath), // Dynamically use user's image
+                image: AssetImage(user.images[0]), // Dynamically use user's image
                 fit: BoxFit.cover,
               ),
             ),
